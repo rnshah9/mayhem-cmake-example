@@ -19,5 +19,6 @@ int fuzzme(char *buf)
 
 int LLVMFuzzerTestOneInput(char* data, size_t size) {
   fuzzme(data);
+  return 0;
 }
 
